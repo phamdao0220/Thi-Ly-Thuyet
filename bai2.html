@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2, 4, 6, 8, 1, 9];
+    let array = +prompt("Nhap so can xoa");
+
+    function tryRemoveFromArray(arr, array) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] === array) {
+                arr.splice(i, 1)
+            }
+
+        }
+        return arr;
+    }
+
+    document.write(tryRemoveFromArray(arr, array));
+</script>
+
+</body>
+</html>
